@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+<meta charset="UTF-8">
+<title>User</title>
+</head>
+<body>
+	<section>
+		<div class="container text-center mt-3">
+			<h1>Donate Us here</h1>
+		</div>
+		<input required id="payment_field" type="text" class="form-control my-2" placeholder="Enter amount here"/>
+		<div class="container text-center mt-3">
+			<button onclick="paymentStart()" class="btn btn-success">Pay</button>
+		</div>
+		<script>
+			$(document).ready(() => {
+                $(".item").removeClass("active");
+                $("#home-link").addClass("active");
+            });
+		</script>
+	</section>
+</body>
+</html>
